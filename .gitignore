@@ -1,6 +1,7 @@
 .next/
 node_modules/
 .tools/
+.ghconfig/
 out/
 .env*
 !.env.example
