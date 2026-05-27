@@ -13,13 +13,13 @@ export default async function HomePage() {
 
   return (
     <main>
-      <section className="mx-auto flex min-h-[86vh] max-w-6xl flex-col justify-center px-5 py-16 sm:px-8 md:py-24">
-        <div className="mx-auto max-w-5xl text-center">
+      <section className="mx-auto flex min-h-[62vh] max-w-7xl flex-col justify-center px-5 py-10 sm:px-8 md:py-14">
+        <div className="mx-auto max-w-7xl text-center">
           <h1 className="sr-only">
-            Esther (Xinyi) Huang
+            Esther Huang
           </h1>
           <ParticleTitle
-            lines={["Esther", "(Xinyi)", "Huang"]}
+            lines={["Esther Huang"]}
           />
           <div className="mt-9 flex flex-wrap justify-center gap-3">
             <Link

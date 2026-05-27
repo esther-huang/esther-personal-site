@@ -42,7 +42,8 @@ export function ParticleTitle({ lines }: ParticleTitleProps) {
       const rect = canvas.getBoundingClientRect();
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       const width = Math.max(rect.width, 320);
-      const height = width < 640 ? 520 : 820;
+      const isSingleLine = lines.length === 1;
+      const height = isSingleLine ? (width < 640 ? 300 : 430) : (width < 640 ? 520 : 820);
 
       canvas.width = Math.floor(width * dpr);
       canvas.height = Math.floor(height * dpr);
@@ -55,7 +56,7 @@ export function ParticleTitle({ lines }: ParticleTitleProps) {
       const maskContext = mask.getContext("2d");
       if (!maskContext) return;
 
-      const fontSize = Math.min(width / 4.85, width < 640 ? 112 : 206);
+      let fontSize = Math.min(width / 4.85, width < 640 ? 112 : 206);
       const lineHeight = fontSize * 1.05;
       const startY = height / 2 - ((lines.length - 1) * lineHeight) / 2;
 
@@ -64,6 +65,16 @@ export function ParticleTitle({ lines }: ParticleTitleProps) {
       maskContext.textAlign = "center";
       maskContext.textBaseline = "middle";
       maskContext.font = `700 ${fontSize}px Georgia, serif`;
+
+      if (isSingleLine) {
+        const maxLineWidth = width * 0.94;
+        const measuredWidth = maskContext.measureText(lines[0]).width;
+
+        if (measuredWidth > maxLineWidth) {
+          fontSize = fontSize * (maxLineWidth / measuredWidth);
+          maskContext.font = `700 ${fontSize}px Georgia, serif`;
+        }
+      }
 
       lines.forEach((line, index) => {
         maskContext.fillText(line, width / 2, startY + index * lineHeight);
