@@ -13,33 +13,19 @@ export default async function HomePage() {
 
   return (
     <main>
-      <section className="mx-auto flex min-h-[62vh] max-w-7xl flex-col justify-center px-5 py-10 sm:px-8 md:py-14">
-        <div className="mx-auto max-w-7xl text-center">
+      <section className="mx-auto flex min-h-[52vh] max-w-[1500px] flex-col justify-center px-4 py-8 sm:px-6 md:py-10">
+        <div className="mx-auto max-w-[1500px] text-center">
           <h1 className="sr-only">
             Esther Huang
           </h1>
           <ParticleTitle
             lines={["Esther Huang"]}
           />
-          <div className="mt-9 flex flex-wrap justify-center gap-3">
-            <Link
-              href="/projects"
-              className="rounded-md border border-white/25 bg-white/[0.075] px-5 py-3 text-sm font-semibold text-ink shadow-[0_0_24px_rgba(241,212,109,0.08)] transition duration-700 hover:border-sage/45 hover:bg-white/[0.11]"
-            >
-              View projects
-            </Link>
-            <Link
-              href="/writing"
-              className="rounded-md border border-line px-5 py-3 text-sm font-semibold text-ink transition duration-700 hover:border-rust/60 hover:text-rust"
-            >
-              Read writing
-            </Link>
-          </div>
         </div>
       </section>
 
       <section className="border-y border-line/80 bg-white/[0.035] backdrop-blur-sm">
-        <div className="mx-auto grid max-w-6xl gap-8 px-5 py-14 sm:px-8 md:grid-cols-[0.75fr_1.25fr]">
+        <div className="mx-auto grid max-w-6xl gap-8 px-5 py-11 sm:px-8 md:grid-cols-[0.75fr_1.25fr]">
           <SectionHeading
             index="01"
             eyebrow="Current focus"
@@ -67,7 +53,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
+      <section className="mx-auto max-w-6xl px-5 py-12 sm:px-8">
         <SectionHeading
           index="02"
           eyebrow="Featured projects"
@@ -93,7 +79,7 @@ export default async function HomePage() {
       </section>
 
       <section className="border-y border-line/80 bg-white/[0.035] backdrop-blur-sm">
-        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:px-8 lg:grid-cols-[0.78fr_1.22fr]">
+        <div className="mx-auto grid max-w-6xl gap-8 px-5 py-11 sm:px-8 lg:grid-cols-[0.78fr_1.22fr]">
           <SectionHeading
             index="03"
             eyebrow="Writing & notes"
@@ -129,7 +115,7 @@ export default async function HomePage() {
       </section>
 
       <section className="border-t border-line/80 bg-paper/40 backdrop-blur-sm">
-        <div className="mx-auto flex max-w-6xl flex-col gap-5 px-5 py-12 sm:px-8 md:flex-row md:items-center md:justify-between">
+        <div className="mx-auto flex max-w-6xl flex-col gap-5 px-5 py-10 sm:px-8 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-bluegray">
               Contact

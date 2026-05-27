@@ -43,7 +43,7 @@ export function ParticleTitle({ lines }: ParticleTitleProps) {
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       const width = Math.max(rect.width, 320);
       const isSingleLine = lines.length === 1;
-      const height = isSingleLine ? (width < 640 ? 300 : 430) : (width < 640 ? 520 : 820);
+      const height = isSingleLine ? (width < 640 ? 320 : 480) : (width < 640 ? 520 : 820);
 
       canvas.width = Math.floor(width * dpr);
       canvas.height = Math.floor(height * dpr);
@@ -56,7 +56,7 @@ export function ParticleTitle({ lines }: ParticleTitleProps) {
       const maskContext = mask.getContext("2d");
       if (!maskContext) return;
 
-      let fontSize = Math.min(width / 4.85, width < 640 ? 112 : 206);
+      let fontSize = Math.min(width / 4.1, width < 640 ? 132 : 270);
       const lineHeight = fontSize * 1.05;
       const startY = height / 2 - ((lines.length - 1) * lineHeight) / 2;
 
@@ -67,7 +67,7 @@ export function ParticleTitle({ lines }: ParticleTitleProps) {
       maskContext.font = `700 ${fontSize}px Georgia, serif`;
 
       if (isSingleLine) {
-        const maxLineWidth = width * 0.94;
+        const maxLineWidth = width * 0.99;
         const measuredWidth = maskContext.measureText(lines[0]).width;
 
         if (measuredWidth > maxLineWidth) {
