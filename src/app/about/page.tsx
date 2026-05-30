@@ -71,7 +71,7 @@ export default function AboutPage() {
       />
 
       <div className="grid gap-6 md:grid-cols-[0.85fr_1.15fr]">
-        <div className="rounded-lg border border-line bg-white/[0.045] p-5 backdrop-blur-md">
+        <div className="rounded-lg border border-line bg-panel p-5 shadow-soft">
           <div className="about-avatar mb-5" aria-label="Portrait placeholder for Esther">
             {/* TODO: Replace this placeholder with Esther's approved public headshot. */}
             <div className="about-avatar__frame">
@@ -104,7 +104,7 @@ export default function AboutPage() {
         <p className="about-section-label">Experience</p>
         <div className="grid gap-3">
           {experience.map((item) => (
-            <details key={item.label} className="about-disclosure rounded-lg border border-line bg-white/[0.045] p-5 backdrop-blur-md">
+            <details key={item.label} className="about-disclosure rounded-lg border border-line bg-panel p-5 shadow-soft">
               <summary className="flex cursor-pointer list-none items-start justify-between gap-4">
                 <span className="flex items-start gap-3">
                   <LogoSlot label={item.logoLabel} name={item.label} />
@@ -133,7 +133,7 @@ export default function AboutPage() {
         <p className="about-section-label">Education</p>
         <div className="grid gap-3 md:grid-cols-2">
           {education.map((item) => (
-            <details key={item.school} className="about-disclosure rounded-lg border border-line bg-white/[0.045] p-5 backdrop-blur-md">
+            <details key={item.school} className="about-disclosure rounded-lg border border-line bg-panel p-5 shadow-soft">
               <summary className="flex cursor-pointer list-none items-start justify-between gap-4">
                 <span className="flex items-start gap-3">
                   <LogoSlot label={item.logoLabel} name={item.school} />
@@ -159,7 +159,7 @@ export default function AboutPage() {
         <p className="about-section-label">Technical strengths</p>
         <div className="flex flex-wrap gap-2">
           {strengths.map((strength) => (
-            <span key={strength} className="rounded-full border border-line bg-white/[0.045] px-4 py-2 text-sm leading-6 text-muted backdrop-blur-md">
+            <span key={strength} className="rounded-full border border-line bg-panel px-4 py-2 text-sm leading-6 text-muted">
               {strength}
             </span>
           ))}

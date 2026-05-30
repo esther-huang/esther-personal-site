@@ -16,7 +16,7 @@ export function ProjectCard({
   return (
     <Link
       href={`/projects/${project.slug}`}
-      className="group flex h-full flex-col justify-between rounded-lg border border-line bg-white/[0.045] p-5 shadow-soft backdrop-blur-md transition duration-700 hover:-translate-y-0.5 hover:border-bluegray/40 hover:bg-white/[0.075]"
+      className="group flex h-full flex-col justify-between rounded-lg border border-line bg-panel p-5 shadow-soft transition duration-700 hover:-translate-y-0.5 hover:border-bluegray/35 hover:bg-panelSoft"
     >
       {showIllustrationSlot ? <ProjectIllustrationSlot title={project.title} /> : null}
       <div className="flex gap-4">

@@ -24,7 +24,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-line/80 bg-white/[0.035] backdrop-blur-sm">
+      <section className="border-y border-line bg-paper/85">
         <div className="mx-auto grid max-w-6xl gap-8 px-5 py-11 sm:px-8 md:grid-cols-[0.75fr_1.25fr]">
           <SectionHeading
             index="01"
@@ -78,7 +78,7 @@ export default async function HomePage() {
         </Link>
       </section>
 
-      <section className="border-y border-line/80 bg-white/[0.035] backdrop-blur-sm">
+      <section className="border-y border-line bg-paper/85">
         <div className="mx-auto grid max-w-6xl gap-8 px-5 py-11 sm:px-8 lg:grid-cols-[0.78fr_1.22fr]">
           <SectionHeading
             index="03"
@@ -88,7 +88,7 @@ export default async function HomePage() {
           />
           <div className="grid gap-4">
             <SignalPanel compact />
-            <div className="rounded-lg border border-line bg-white/[0.045] p-5 backdrop-blur-md">
+            <div className="rounded-lg border border-line bg-panel p-5 shadow-soft">
               <div className="mb-2 flex items-center justify-between gap-4">
                 <p className="font-mono text-xs font-semibold uppercase tracking-[0.16em] text-bluegray">
                   Recent writing
@@ -114,7 +114,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="border-t border-line/80 bg-paper/40 backdrop-blur-sm">
+      <section className="border-t border-line bg-paper">
         <div className="mx-auto flex max-w-6xl flex-col gap-5 px-5 py-10 sm:px-8 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-bluegray">
@@ -126,7 +126,7 @@ export default async function HomePage() {
           </div>
           <Link
             href="/contact"
-            className="w-fit rounded-md border border-bluegray/35 bg-bluegray/10 px-5 py-3 text-sm font-semibold text-ink transition duration-700 hover:border-bluegray/70 hover:bg-bluegray/20"
+            className="w-fit rounded-md border border-bluegray/30 bg-panel px-5 py-3 text-sm font-semibold text-ink transition duration-700 hover:border-bluegray/55 hover:bg-panelSoft"
           >
             Contact Esther
           </Link>

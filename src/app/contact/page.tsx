@@ -19,7 +19,7 @@ export default function ContactPage() {
       <div className="grid gap-5 md:grid-cols-2">
         <Link
           href={siteConfig.social.email}
-          className="rounded-lg border border-line bg-white/[0.045] p-5 backdrop-blur-md transition duration-700 hover:border-bluegray/40 hover:bg-white/[0.075]"
+          className="rounded-lg border border-line bg-panel p-5 shadow-soft transition duration-700 hover:border-bluegray/35 hover:bg-panelSoft"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bluegray">Email</p>
           <p className="mt-3 text-lg font-semibold text-ink">hello@example.com</p>
@@ -29,7 +29,7 @@ export default function ContactPage() {
         </Link>
         <Link
           href={siteConfig.social.github}
-          className="rounded-lg border border-line bg-white/[0.045] p-5 backdrop-blur-md transition duration-700 hover:border-bluegray/40 hover:bg-white/[0.075]"
+          className="rounded-lg border border-line bg-panel p-5 shadow-soft transition duration-700 hover:border-bluegray/35 hover:bg-panelSoft"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bluegray">GitHub</p>
           <p className="mt-3 text-lg font-semibold text-ink">Project repositories</p>
@@ -39,7 +39,7 @@ export default function ContactPage() {
         </Link>
         <Link
           href={siteConfig.social.linkedin}
-          className="rounded-lg border border-line bg-white/[0.045] p-5 backdrop-blur-md transition duration-700 hover:border-bluegray/40 hover:bg-white/[0.075]"
+          className="rounded-lg border border-line bg-panel p-5 shadow-soft transition duration-700 hover:border-bluegray/35 hover:bg-panelSoft"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-sage">LinkedIn</p>
           <p className="mt-3 text-lg font-semibold text-ink">Professional updates</p>
@@ -49,7 +49,7 @@ export default function ContactPage() {
         </Link>
         <Link
           href={siteConfig.social.x}
-          className="rounded-lg border border-line bg-white/[0.045] p-5 backdrop-blur-md transition duration-700 hover:border-bluegray/40 hover:bg-white/[0.075]"
+          className="rounded-lg border border-line bg-panel p-5 shadow-soft transition duration-700 hover:border-bluegray/35 hover:bg-panelSoft"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bluegray">X</p>
           <p className="mt-3 text-lg font-semibold text-ink">Short build notes</p>

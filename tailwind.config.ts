@@ -9,10 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        paper: "#050506",
+        paper: "#060605",
+        panel: "#11100e",
+        panelSoft: "#171510",
         ink: "#f4f4f1",
-        muted: "#8e918b",
-        line: "#252724",
+        muted: "#a09a90",
+        line: "#34312c",
         sage: "#f1d46d",
         rust: "#b98aa0",
         bluegray: "#d5d6d1",
@@ -24,7 +26,7 @@ const config: Config = {
         mono: ["var(--font-geist-mono)", "ui-monospace", "SFMono-Regular", "monospace"]
       },
       boxShadow: {
-        soft: "0 18px 60px rgba(32, 29, 25, 0.08)"
+        soft: "0 16px 46px rgba(0, 0, 0, 0.22)"
       }
     }
   },

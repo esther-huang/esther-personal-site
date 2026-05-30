@@ -14,7 +14,7 @@ export function SignalPanel({ compact = false }: SignalPanelProps) {
   return (
     <div
       className={[
-        "signal-panel relative overflow-hidden rounded-lg border border-line bg-white/[0.045] p-4 shadow-soft backdrop-blur-md sm:p-5",
+        "signal-panel relative overflow-hidden rounded-lg border border-line bg-panel p-4 shadow-soft sm:p-5",
         compact ? "signal-panel--compact" : ""
       ].join(" ")}
     >
