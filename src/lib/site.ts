@@ -6,11 +6,10 @@ export const siteConfig = {
   shortBio:
     "AI builder with a background in information science, electrical and computer engineering, GUI agents, robotics workflows, RAG systems, and AI infrastructure.",
   social: {
-    // TODO: Esther should replace these placeholders before publishing.
-    x: "#",
-    github: "#",
-    linkedin: "#",
-    email: "mailto:hello@example.com"
+    x: "https://x.com/_Esther_H",
+    github: "https://github.com/esther-huang",
+    linkedin: "https://www.linkedin.com/in/esther-xinyi-huang/",
+    email: ""
   }
 };
 

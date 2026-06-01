@@ -13,20 +13,10 @@ export default function ContactPage() {
       <SectionHeading
         eyebrow="Contact"
         title="For AI agent work, early-stage product thinking, or technical collaboration."
-        description="Use the placeholder links below until Esther adds exact public URLs."
+        description="Find Esther through the public links below."
       />
 
-      <div className="grid gap-5 md:grid-cols-2">
-        <Link
-          href={siteConfig.social.email}
-          className="rounded-lg border border-line bg-panel p-5 shadow-soft transition duration-700 hover:border-bluegray/35 hover:bg-panelSoft"
-        >
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bluegray">Email</p>
-          <p className="mt-3 text-lg font-semibold text-ink">hello@example.com</p>
-          <p className="mt-2 text-sm leading-6 text-muted">
-            TODO: replace with Esther's preferred public email.
-          </p>
-        </Link>
+      <div className="grid gap-5 md:grid-cols-3">
         <Link
           href={siteConfig.social.github}
           className="rounded-lg border border-line bg-panel p-5 shadow-soft transition duration-700 hover:border-bluegray/35 hover:bg-panelSoft"
@@ -34,7 +24,7 @@ export default function ContactPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bluegray">GitHub</p>
           <p className="mt-3 text-lg font-semibold text-ink">Project repositories</p>
           <p className="mt-2 text-sm leading-6 text-muted">
-            TODO: replace with Esther's GitHub profile or selected repos.
+            Code, experiments, and selected project work.
           </p>
         </Link>
         <Link
@@ -44,7 +34,7 @@ export default function ContactPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-sage">LinkedIn</p>
           <p className="mt-3 text-lg font-semibold text-ink">Professional updates</p>
           <p className="mt-2 text-sm leading-6 text-muted">
-            TODO: replace with Esther's LinkedIn URL.
+            Background, public work, and professional context.
           </p>
         </Link>
         <Link
@@ -54,7 +44,7 @@ export default function ContactPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bluegray">X</p>
           <p className="mt-3 text-lg font-semibold text-ink">Short build notes</p>
           <p className="mt-2 text-sm leading-6 text-muted">
-            TODO: replace with Esther's X profile if she wants it public here.
+            Concise notes on AI systems, product judgment, and building.
           </p>
         </Link>
       </div>
