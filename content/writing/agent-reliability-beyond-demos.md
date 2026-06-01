@@ -21,4 +21,6 @@ An agent that works in the real world needs state tracking, failure memory, reco
 
 The handoff is not a weakness. Sometimes it is the feature that keeps the system trustworthy.
 
+The same pattern shows up across different contexts. In narrative systems that need to hold story state across scenes. In persona agents that need to stay consistent over time. The surface looks different. The underlying problem is the same.
+
 <!-- TODO: Add examples from public-safe workflow experiments. -->

@@ -11,9 +11,9 @@ tags:
   - trust
 ---
 
-Good opportunities do not always look like job posts. They often appear as founder signals, product launches, portfolio updates, events, and quiet shifts in the market.
+Good opportunities rarely arrive as clean signals. More often they show up as a founder's offhand update, a portfolio shift, a product launch that hints at a hiring need, a conversation that happened two months ago and is suddenly relevant again.
 
-This project is about building a better way to notice, evaluate, and follow up on those signals — without turning it into automated outreach or a growth hack dashboard.
+The problem is not finding the signal. It is retaining it long enough to act on it at the right moment. This project is about building a system that helps with that: noticing what is worth tracking, keeping context across time, and supporting follow-up that feels considered rather than automated.
 
 ## What I'm building
 

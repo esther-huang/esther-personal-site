@@ -26,6 +26,10 @@ Long-form story generation is a runtime problem: scenes, goals, player choices, 
 
 Longer context windows help, but they do not solve the structural problem. A story still needs to know what matters, what can change, what must stay true, and how to recover when the player wanders off-script.
 
+Here is a concrete case: a player decides mid-scene to betray an ally they were supposed to protect. The model can generate a reaction. But should the ally remember this next scene? Does it change what the player is allowed to do later? Does the story's ending branch from here, or was this a throwaway choice? Those questions cannot be answered by the context window alone. They require explicit state: what persists, what expires, and what triggers a branch.
+
+We are exploring a scene graph structure where each node carries its own state requirements: what must be true for the scene to activate, what changes when the player passes through it, and what the system needs to carry forward. The goal is not to constrain the player. It is to make the story's memory reliable enough that freedom feels meaningful.
+
 ## Open questions
 
 - How should a story graph balance author intent and player freedom?
