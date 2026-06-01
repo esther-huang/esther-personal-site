@@ -1,7 +1,7 @@
 ---
 title: "Agent Reliability Beyond Demos"
 description: "The durable work in agent systems often starts after the first impressive run: state, failure memory, recovery, and human handoff."
-date: "2026-05-19"
+date: "2026-03-18"
 category: "Agents for Action"
 tags:
   - agent reliability

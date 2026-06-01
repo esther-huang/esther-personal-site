@@ -1,7 +1,7 @@
 ---
 title: "Persona Is Not a Prompt"
 description: "Long-term character agents need more than tone imitation. They need memory, values, relationship state, and behavioral boundaries."
-date: "2026-05-20"
+date: "2026-04-23"
 category: "Agent Systems"
 tags:
   - persona

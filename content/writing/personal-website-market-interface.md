@@ -1,7 +1,7 @@
 ---
 title: "My Personal Website Is Not a Portfolio. So What Is It?"
 description: "A short note on why the site is organized around direction, judgment, and active work instead of a static list of achievements."
-date: "2026-05-21"
+date: "2026-05-14"
 category: "Building in public"
 tags:
   - personal website
@@ -20,4 +20,3 @@ Right now, the pattern across my projects is AI systems that help humans act in 
 So the site is organized less like a trophy shelf and more like a map of current direction.
 
 It should make the work easier to inspect, easier to connect, and easier to trust.
-
