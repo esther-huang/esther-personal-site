@@ -1,5 +1,5 @@
 ---
-title: "My Personal Website Is Not a Portfolio. It Is a Market Interface."
+title: "My Personal Website Is Not a Portfolio. So What Is It?"
 description: "A short note on why the site is organized around direction, judgment, and active work instead of a static list of achievements."
 date: "2026-05-21"
 category: "Personal GTM"
@@ -8,8 +8,6 @@ tags:
   - public signal
   - market interface
 ---
-
-## Draft note
 
 A traditional portfolio usually answers one question: what have I done?
 

@@ -14,8 +14,8 @@ export default async function ProjectsPage() {
     <main className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
       <SectionHeading
         eyebrow="Projects"
-        title="AI systems for action, memory, narrative, focus, and opportunity."
-        description="These are framed as active explorations and project notes. They are not inflated into products, launches, or traction claims."
+        title="A few things I keep building toward."
+        description="Active experiments and project notes. Still building, still figuring things out."
       />
       <div className="grid gap-5 md:grid-cols-2">
         {projects.map((project) => (

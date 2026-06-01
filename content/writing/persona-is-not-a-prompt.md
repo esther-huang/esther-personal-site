@@ -9,8 +9,6 @@ tags:
   - agents
 ---
 
-## Draft note
-
 The more I think about long-term character agents, the less I trust prompt-only definitions of persona.
 
 A prompt can describe voice. It can set a style. It can even list preferences and boundaries.

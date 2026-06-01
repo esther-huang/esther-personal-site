@@ -14,8 +14,8 @@ export default async function WritingPage() {
     <main className="mx-auto max-w-5xl px-5 py-16 sm:px-8">
       <SectionHeading
         eyebrow="Writing"
-        title="Public-safe notes from private thinking and project work."
-        description="Short essays and observations about AI agents, workflow friction, narrative systems, focus, trust, and personal GTM."
+        title="Short pieces from along the way."
+        description="Thinking out loud while building AI systems."
       />
       <div>
         {writing.map((item) => (

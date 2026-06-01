@@ -9,8 +9,6 @@ tags:
   - human-in-the-loop
 ---
 
-## Draft note
-
 Agent demos are good at showing the happy path.
 
 Real workflows are less polite.
