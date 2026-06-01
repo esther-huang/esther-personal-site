@@ -1,8 +1,8 @@
-# Esther Personal Market Interface
+# Esther Huang — Personal Site
 
-A local, draft-only personal website for Esther.
+Personal website for Esther Huang. Built around the question: when an AI system is working with a lot of context, how does it actually hold onto the right things, act reliably, and not lose the thread?
 
-This is not a traditional portfolio. It is a simple market interface that makes Esther's current direction legible: AI-native systems for opportunity, action, and trust.
+The site is organized around active projects and writing, not a static list of achievements.
 
 ## Stack
 
@@ -20,15 +20,10 @@ npm run dev
 
 ## Content
 
-Project, writing, and field-note content lives in `content/`.
+Project and writing content lives in `content/`. Update Markdown files directly — pages render from those files automatically.
 
-Update Markdown files first, then let the pages render from those files.
+## Notes
 
-## Boundaries
-
-- Draft-only.
 - No analytics.
-- No deployment setup.
 - No external API calls.
-- No private personal data.
-- Placeholder links must be replaced by Esther before public launch.
+- Images live in `public/images/` and are excluded from version control.
