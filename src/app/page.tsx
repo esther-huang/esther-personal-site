@@ -29,7 +29,7 @@ export default async function HomePage() {
           <SectionHeading
             index="01"
             eyebrow="Current focus"
-            title="Building systems that notice the hidden work between intention and action."
+            title="What does it take for an AI system to accumulate context and actually hold onto it?"
           />
           <div className="current-focus-content">
             <div className="hero-portrait focus-portrait" aria-label="Portrait placeholder for Esther">
@@ -45,9 +45,11 @@ export default async function HomePage() {
               </div>
             </div>
             <p>
-              I’m interested in how AI agents can help people navigate messy real-world contexts:
-              complex workflows, long-term memory, narrative interaction, personal focus, and
-              high-trust opportunities.
+              That&apos;s the question driving most of what I build. I&apos;ve worked on
+              multi-agent systems where memory had to be shared across agents, GUI agents that
+              needed to stay reliable in real UI environments, and narrative systems where
+              coherence had to hold across long, branching stories. The problem keeps showing
+              up in different shapes.
             </p>
           </div>
         </div>
@@ -57,8 +59,8 @@ export default async function HomePage() {
         <SectionHeading
           index="02"
           eyebrow="Featured projects"
-          title="Five workstreams, one question."
-          description="How can AI help real humans navigate action, memory, trust, motivation, creativity, and opportunity?"
+          title="Different projects, same underlying problem."
+          description="Memory, context, and reliable action — in storytelling, in workflows, in long-term agent behavior. These are the areas I keep returning to."
         />
         <div className="grid gap-5 md:grid-cols-3">
           {featuredProjects.map((project) => (
@@ -83,7 +85,7 @@ export default async function HomePage() {
           <SectionHeading
             index="03"
             eyebrow="Writing & notes"
-            title="A short trail of what Esther is noticing."
+            title="Writing and notes from along the way."
             description="Home stays brief. The writing page carries the deeper archive."
           />
           <div className="grid gap-4">

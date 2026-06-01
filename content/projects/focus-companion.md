@@ -4,6 +4,7 @@ description: "A gentle desktop AI companion for task initiation, focus sessions,
 status: "Concept"
 pillar: "Focus and Self"
 featured: false
+draft: true
 order: 4
 tags:
   - focus

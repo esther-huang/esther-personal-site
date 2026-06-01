@@ -16,6 +16,7 @@ export type ContentItem = {
   pillar?: string;
   order?: number;
   featured?: boolean;
+  draft?: boolean;
   tags: string[];
   body: string;
   html: string;
@@ -38,7 +39,7 @@ export async function getContentItems(type: ContentType): Promise<ContentItem[]>
     })
   );
 
-  return items.sort((a, b) => {
+  return items.filter((item) => !item.draft).sort((a, b) => {
     if (a.order !== undefined || b.order !== undefined) {
       return (a.order ?? 999) - (b.order ?? 999);
     }
@@ -63,6 +64,7 @@ export async function getContentItem(type: ContentType, slug: string): Promise<C
     pillar: data.pillar ? String(data.pillar) : undefined,
     order: typeof data.order === "number" ? data.order : undefined,
     featured: Boolean(data.featured),
+    draft: Boolean(data.draft),
     tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
     body: parsed.content,
     html: await markdownToHtml(parsed.content)

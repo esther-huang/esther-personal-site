@@ -4,7 +4,6 @@ import "./globals.css";
 import { AmbientBackground } from "@/components/AmbientBackground";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { SystemStatusTags } from "@/components/SystemStatusTags";
 import { siteConfig } from "@/lib/site";
 
 const sora = Sora({
@@ -27,7 +26,7 @@ const newsreader = Newsreader({
 
 export const metadata: Metadata = {
   title: {
-    default: "Esther | AI-native systems for opportunity, action, and trust",
+    default: "Esther | Memory, knowledge, and action in AI systems",
     template: "%s | Esther"
   },
   description: siteConfig.description
@@ -42,7 +41,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${sora.variable} ${geistMono.variable} ${newsreader.variable} font-sans`}>
         <AmbientBackground />
-        <SystemStatusTags />
         <Header />
         {children}
         <Footer />

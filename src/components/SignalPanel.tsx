@@ -19,11 +19,6 @@ export function SignalPanel({ compact = false }: SignalPanelProps) {
       ].join(" ")}
     >
       <div className="relative">
-        <div className="mb-8 flex items-center justify-between border-b border-line pb-4 text-xs uppercase tracking-[0.16em] text-muted">
-          <span>Market Interface</span>
-          <span>Draft v0.1</span>
-        </div>
-
         <div className="signal-map">
           <div className="signal-map__orbit signal-map__orbit--outer" aria-hidden="true" />
           <div className="signal-map__orbit signal-map__orbit--inner" aria-hidden="true" />

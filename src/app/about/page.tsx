@@ -7,8 +7,12 @@ const experience = [
     title: "Software Engineering Intern - AI Engineering",
     date: "May 2025 - Aug 2025",
     summary: "GUI agents, perception services, deployment workflows, and agentic automation.",
-    body:
-      "Worked on GUI agents, perception services, DGX-cluster deployment, Helm-based workflows, and agentic automation for engineering workflows."
+    body: [
+      "Optimized a gameplay GUI agent for test automation and improved its perception capability.",
+      "Owned end-to-end deployment of a high-performance perception service to a DGX cluster, improving inference stability and reducing local machine resource load.",
+      "Architected and delivered a Helm-based Blueprint for a GUI Agent workflow, improving concurrent performance and creating a reusable production-grade generative AI workflow.",
+      "Designed a CLI agent for performance benchmarking with a knowledge base to reduce engineering toil."
+    ]
   },
   {
     label: "ABB Robotics",
@@ -17,7 +21,7 @@ const experience = [
     date: "Dec 2023 - Jun 2024",
     summary: "Multi-agent systems for natural-language human-robot interaction.",
     body:
-      "Built multi-agent natural-language human-robot interaction systems with shared memory, planning, ambiguity resolution, and self-correction."
+      "Natural-language human-robot interaction with shared memory and ambiguity resolution. Most of the interesting problems were in the gaps between what the user said and what they meant."
   },
   {
     label: "IIOT Lab, Shanghai Jiao Tong University",
@@ -66,8 +70,8 @@ export default function AboutPage() {
     <main className="mx-auto max-w-5xl px-5 py-16 sm:px-8">
       <SectionHeading
         eyebrow="About"
-        title="Esther builds AI-native systems for opportunity, action, and trust."
-        description="A compact map of the background and judgment behind the work."
+        title="Memory, knowledge, and action. Building AI systems that hold it together when conditions get real."
+        description="Background, experience, and what I'm building toward."
       />
 
       <div className="grid gap-6 md:grid-cols-[0.85fr_1.15fr]">
@@ -88,14 +92,19 @@ export default function AboutPage() {
             Working identity
           </p>
           <p className="mt-4 font-serif text-2xl leading-snug text-ink md:text-3xl">
-            AI-native systems for opportunity, action, and trust.
+            Memory, knowledge, and action. Building AI systems that hold it together when conditions get real.
           </p>
         </div>
         <div className="text-base leading-8 text-muted">
           <p>
-            Esther works across AI agents, workflow automation, memory systems, narrative
-            interaction, focus support, robotics-adjacent systems, and personal opportunity
-            discovery.
+            The question I keep building around: when an AI system is working with a lot of
+            context, how does it actually hold onto the right things, act reliably, and not
+            lose the thread?
+          </p>
+          <p className="mt-4">
+            That's the thread connecting what I build — agents that adapt when forms change,
+            stories that stay coherent when players wander off-script, companions that help
+            you start when starting is the hard part.
           </p>
         </div>
       </div>
@@ -123,7 +132,18 @@ export default function AboutPage() {
                 </span>
                 <span className="about-disclosure__plus text-rust">+</span>
               </summary>
-              <p className="mt-4 text-sm leading-7 text-muted">{item.body}</p>
+              {Array.isArray(item.body) ? (
+                <ul className="mt-4 space-y-2 text-sm leading-7 text-muted">
+                  {item.body.map((point) => (
+                    <li key={point} className="flex gap-2">
+                      <span className="mt-2.5 h-1 w-1 shrink-0 rounded-full bg-muted/50" />
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="mt-4 text-sm leading-7 text-muted">{item.body}</p>
+              )}
             </details>
           ))}
         </div>

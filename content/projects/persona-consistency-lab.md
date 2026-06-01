@@ -3,7 +3,7 @@ title: "Persona Consistency Lab"
 description: "Experiments in long-term character agents with memory, voice, relationship state, and behavioral consistency."
 status: "Research lab"
 pillar: "Persona and Relationship"
-featured: true
+featured: false
 order: 3
 tags:
   - persona

@@ -22,9 +22,6 @@ export function Header() {
             <span className="font-mono text-[0.66rem] font-semibold uppercase tracking-[0.24em] text-ink">
               {siteConfig.name}
             </span>
-            <span className="mt-1 text-[0.62rem] uppercase tracking-[0.18em] text-muted">
-              Signal OS
-            </span>
           </span>
         </Link>
         <nav className="flex min-w-0 flex-1 items-center justify-end gap-1 overflow-x-auto rounded-full border border-line bg-paper p-1 text-[0.72rem] text-muted sm:flex-none sm:text-sm">
@@ -49,10 +46,6 @@ export function Header() {
             );
           })}
         </nav>
-        <div className="hidden items-center gap-2 rounded-full border border-sage/25 bg-panelSoft px-3 py-2 font-mono text-[0.62rem] uppercase tracking-[0.18em] text-sage md:flex">
-          <span className="h-1.5 w-1.5 rounded-full bg-sage" />
-          Local
-        </div>
       </div>
     </header>
   );
