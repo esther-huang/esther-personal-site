@@ -11,30 +11,18 @@ tags:
   - trust
 ---
 
-## Public framing
+Good opportunities do not always look like job posts. They often appear as founder signals, product launches, portfolio updates, events, and quiet shifts in the market.
 
-Good opportunities do not always look like job posts. They often appear as founder signals, product launches, portfolio updates, events, and weak signals in the market.
+This project is about building a better way to notice, evaluate, and follow up on those signals — without turning it into automated outreach or a growth hack dashboard.
 
-This project is about becoming more legible to the right people while also building a better way to notice and evaluate opportunities.
+## What I'm building
 
-## What it is for
-
-- Tracking opportunities and weak signals.
+- Tracking opportunities and weak signals over time.
 - Connecting public writing to project direction.
-- Turning private notes into safer public signal.
 - Supporting high-trust follow-up without spam.
 
-## What it is not
-
-- Not an influencer machine.
-- Not automated posting.
-- Not a growth hack dashboard.
-- Not a system for publishing private context.
-
-## Questions
+## Open questions
 
 - What signals are worth tracking over time?
 - How should public writing connect to real project work?
 - What makes a person easier to trust before a first conversation?
-
-<!-- TODO: Add public-safe schema notes once the local memory structure matures. -->

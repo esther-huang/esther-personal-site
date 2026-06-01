@@ -2,7 +2,7 @@
 title: "My Personal Website Is Not a Portfolio. So What Is It?"
 description: "A short note on why the site is organized around direction, judgment, and active work instead of a static list of achievements."
 date: "2026-05-21"
-category: "Personal GTM"
+category: "Building in public"
 tags:
   - personal website
   - public signal
@@ -21,4 +21,3 @@ So the site is organized less like a trophy shelf and more like a map of current
 
 It should make the work easier to inspect, easier to connect, and easier to trust.
 
-<!-- TODO: Esther can revise this into a more personal first post before publishing. -->

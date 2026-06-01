@@ -11,13 +11,11 @@ tags:
   - agents
 ---
 
-## Public framing
+Keeping a story coherent while players keep changing the path — that is the problem this project is built around.
 
-The hard part of AI storytelling is not writing the next paragraph. It is keeping the story coherent while players keep changing the path.
+Long-form story generation is a runtime problem: scenes, goals, player choices, constraints, and state transitions. The challenge is not generating the next paragraph. It is knowing what must stay true across scenes, what can change, and what to do when the player takes an unexpected path.
 
-This project treats long-form story generation as a runtime problem: scenes, goals, player choices, constraints, and state transitions.
-
-## What it is for
+## What I'm building
 
 - Decomposing long scripts into structured story units.
 - Tracking player behavior and story state.
@@ -26,12 +24,10 @@ This project treats long-form story generation as a runtime problem: scenes, goa
 
 ## Design notes
 
-Longer context windows help, but they do not solve everything. A story still needs structure: what matters, what can change, what must stay true, and what happens when the player takes an unexpected path.
+Longer context windows help, but they do not solve the structural problem. A story still needs to know what matters, what can change, what must stay true, and how to recover when the player wanders off-script.
 
-## Questions
+## Open questions
 
 - How should a story graph balance author intent and player freedom?
 - What state needs to persist across scenes?
 - How can the system avoid both railroading and narrative drift?
-
-<!-- TODO: Add a public-safe demo story with original characters only. -->

@@ -11,30 +11,19 @@ tags:
   - AI companions
 ---
 
-## Public framing
-
 Persona is not just a system prompt. Long-term character agents need voice, memory, values, relationship state, and behavioral boundaries.
 
-This lab explores how to reduce character drift over longer interactions without relying on private chats, copyrighted characters, or vague prompt-only definitions.
+This lab explores how to reduce character drift over longer interactions. The core problem is not style imitation — it is state management: what the character remembers, what they value, how the relationship has changed, and what behavior stays stable over time.
 
-## What it is for
+## What I'm building
 
-- Modeling stable voice and behavior.
-- Separating memory from personality.
-- Making relationship state explicit.
-- Testing boundaries and consistency over time.
+- Modeling stable voice and behavior across sessions.
+- Separating memory from personality, and personality from relationship state.
+- Making drift detectable and correctable.
+- Testing consistency using synthetic personas and original examples only.
 
-## Safety boundaries
-
-- Use original sample personas for public demos.
-- Do not publish private conversations.
-- Do not lead professional framing with AI romance.
-- Do not use copyrighted character material in public examples.
-
-## Questions
+## Open questions
 
 - What belongs in persona, memory, values, and relationship policy?
-- How can the system notice drift?
-- How should a character change without becoming incoherent?
-
-<!-- TODO: Add a synthetic persona spec and evaluation notes. -->
+- How can the system notice drift before it becomes incoherent?
+- How should a character change over time without losing the thread?

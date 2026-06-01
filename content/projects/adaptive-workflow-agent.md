@@ -11,30 +11,21 @@ tags:
   - human review
 ---
 
-## Public framing
+The interesting problem is not clicking buttons. It is adapting to messy workflows, grounding actions in real user context, learning from failure, and knowing when to ask for review.
 
-The interesting problem is not clicking buttons. It is adapting to messy workflows, grounding actions in real user context, learning from failure, and knowing when to ask the human.
+This project explores a browser agent that can help with high-friction application flows — without automating away the human judgment that actually matters.
 
-This project explores a browser agent that can help with high-friction application flows without turning into a mass auto-apply tool.
-
-## What it is for
+## What I'm building
 
 - Understanding recurring web workflow patterns.
 - Drafting form answers from approved source material.
 - Remembering where workflows break.
-- Asking for human review before any sensitive or final action.
+- Pausing for human review before any sensitive or final action.
 
-## What it is not
+This is not a mass application bot, a recruiter bypass system, or anything that submits without explicit approval.
 
-- Not a mass application bot.
-- Not a recruiter bypass system.
-- Not a system that fabricates qualifications.
-- Not something that submits without explicit approval.
-
-## Questions
+## Open questions
 
 - How should the agent represent form state and user intent?
 - What failures should be remembered for the next attempt?
-- Where should the system pause and ask Esther instead of guessing?
-
-<!-- TODO: Add architecture notes, screenshots, or repo links once public-safe. -->
+- Where should the system pause and ask for review instead of guessing?
