@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ParticleTitle } from "@/components/ParticleTitle";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SectionHeading } from "@/components/SectionHeading";
-import { SignalPanel } from "@/components/SignalPanel";
 import { getContentItems } from "@/lib/content";
 
 export default async function HomePage() {
@@ -32,16 +31,17 @@ export default async function HomePage() {
             title="What does it take for an AI system to accumulate context and actually hold onto it?"
           />
           <div className="current-focus-content">
-            <div className="hero-portrait focus-portrait" aria-label="Portrait placeholder for Esther">
-              {/* TODO: Replace this placeholder with Esther's approved public photo. */}
+            <div className="hero-portrait focus-portrait" aria-label="Portrait of Esther">
               <div className="hero-portrait__frame">
-                <div className="hero-portrait__placeholder">
-                  <span>EH</span>
-                </div>
+                <img
+                  src="/images/esther-headshot.jpeg"
+                  alt="Esther Huang"
+                  className="hero-portrait__image"
+                />
               </div>
               <div className="hero-portrait__meta">
-                <span>Portrait slot</span>
-                <strong>Photo ready</strong>
+                <span>Portrait</span>
+                <strong>Esther Huang</strong>
               </div>
             </div>
             <p>
@@ -60,7 +60,7 @@ export default async function HomePage() {
           index="02"
           eyebrow="Featured projects"
           title="Different projects, same underlying problem."
-          description="Memory, context, and reliable action — in storytelling, in workflows, in long-term agent behavior. These are the areas I keep returning to."
+          description="Memory, context, and reliable action. In storytelling, in workflows, in long-term agent behavior. These are the areas I keep returning to."
         />
         <div className="grid gap-5 md:grid-cols-3">
           {featuredProjects.map((project) => (
@@ -89,7 +89,6 @@ export default async function HomePage() {
             description="Home stays brief. The writing page carries the deeper archive."
           />
           <div className="grid gap-4">
-            <SignalPanel compact />
             <div className="rounded-lg border border-line bg-panel p-5 shadow-soft">
               <div className="mb-2 flex items-center justify-between gap-4">
                 <p className="font-mono text-xs font-semibold uppercase tracking-[0.16em] text-bluegray">

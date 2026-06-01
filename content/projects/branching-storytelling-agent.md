@@ -11,7 +11,7 @@ tags:
   - agents
 ---
 
-Keeping a story coherent while players keep changing the path — that is the problem this project is built around.
+Keeping a story coherent while players keep changing the path. That is the problem this project is built around.
 
 Long-form story generation is a runtime problem: scenes, goals, player choices, constraints, and state transitions. The challenge is not generating the next paragraph. It is knowing what must stay true across scenes, what can change, and what to do when the player takes an unexpected path.
 

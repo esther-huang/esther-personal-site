@@ -171,6 +171,13 @@ main {
   pointer-events: none;
 }
 
+.about-avatar__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .about-avatar__placeholder {
   display: grid;
   min-height: 100%;
@@ -248,6 +255,13 @@ main {
   letter-spacing: 0.08em;
 }
 
+.credential-logo-slot__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .hero-portrait {
   display: grid;
   width: min(100%, 18rem);
@@ -276,6 +290,13 @@ main {
   border: 1px solid rgba(241, 212, 109, 0.2);
   border-radius: 0.4rem;
   pointer-events: none;
+}
+
+.hero-portrait__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-portrait__placeholder {
@@ -896,83 +917,18 @@ main {
 
 .project-illustration-slot {
   position: relative;
-  min-height: 10.5rem;
+  aspect-ratio: 1519 / 888;
   overflow: hidden;
   border: 1px solid rgba(246, 241, 232, 0.13);
   border-radius: 0.65rem;
-  background:
-    radial-gradient(circle at 72% 24%, rgba(185, 138, 160, 0.12), transparent 34%),
-    radial-gradient(circle at 24% 80%, rgba(241, 212, 109, 0.06), transparent 30%),
-    linear-gradient(135deg, rgba(246, 241, 232, 0.055), rgba(246, 241, 232, 0.015));
+  background: #f4f4f1;
 }
 
-.project-illustration-slot__grid {
-  position: absolute;
-  inset: 0;
-  opacity: 0.13;
-  background-image:
-    linear-gradient(to right, rgba(246, 241, 232, 0.16) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(246, 241, 232, 0.1) 1px, transparent 1px);
-  background-size: 28px 28px;
-}
-
-.project-illustration-slot__node {
-  position: absolute;
-  border: 1px solid rgba(246, 241, 232, 0.16);
-  background: #171510;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
-}
-
-.project-illustration-slot__node--one {
-  left: 12%;
-  top: 18%;
-  width: 34%;
-  height: 30%;
-  border-radius: 0.5rem;
-}
-
-.project-illustration-slot__node--two {
-  right: 10%;
-  top: 16%;
-  width: 28%;
-  height: 24%;
-  border-radius: 999px;
-}
-
-.project-illustration-slot__node--three {
-  left: 30%;
-  bottom: 16%;
-  width: 46%;
-  height: 24%;
-  border-color: rgba(241, 212, 109, 0.22);
-  border-radius: 999px;
-}
-
-.project-illustration-slot__copy {
-  position: absolute;
-  left: 1rem;
-  right: 1rem;
-  bottom: 0.9rem;
-}
-
-.project-illustration-slot__copy span {
+.project-illustration-slot__image {
   display: block;
-  color: #f1d46d;
-  font-family: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
-  font-size: 0.58rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
-.project-illustration-slot__copy strong {
-  display: block;
-  margin-top: 0.35rem;
-  color: #f4f4f1;
-  font-family: var(--font-newsreader), Georgia, serif;
-  font-size: 1.25rem;
-  font-weight: 600;
-  line-height: 1.05;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 @keyframes glyph-breathe {

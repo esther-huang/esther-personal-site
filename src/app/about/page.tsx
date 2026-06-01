@@ -4,6 +4,7 @@ const experience = [
   {
     label: "NVIDIA",
     logoLabel: "NV",
+    logoSrc: "/images/projects/nvidia-logo.png",
     title: "Software Engineering Intern - AI Engineering",
     date: "May 2025 - Aug 2025",
     summary: "GUI agents, perception services, deployment workflows, and agentic automation.",
@@ -17,6 +18,7 @@ const experience = [
   {
     label: "ABB Robotics",
     logoLabel: "ABB",
+    logoSrc: "/images/projects/ABB-logo.png",
     title: "AI-Agent Research Intern",
     date: "Dec 2023 - Jun 2024",
     summary: "Multi-agent systems for natural-language human-robot interaction.",
@@ -26,6 +28,7 @@ const experience = [
   {
     label: "IIOT Lab, Shanghai Jiao Tong University",
     logoLabel: "IIOT",
+    logoSrc: "/images/projects/SJTU-logo.png",
     title: "Research Assistant",
     date: "Jun 2023 - Mar 2024",
     summary: "LLM knowledge-capacity research and PyTorch computation workflows.",
@@ -38,6 +41,7 @@ const education = [
   {
     school: "University of Michigan - Ann Arbor",
     logoLabel: "UM",
+    logoSrc: "/images/projects/u-m_logo.png",
     detail: "Master's in Information Science.",
     date: "Aug 2024 - May 2026",
     summary: "Graduate work across information science, data systems, and human-centered AI."
@@ -45,6 +49,7 @@ const education = [
   {
     school: "Shanghai Jiao Tong University",
     logoLabel: "SJTU",
+    logoSrc: "/images/projects/SJTU-logo.png",
     detail: "Bachelor's in Electrical and Computer Engineering.",
     date: "Sep 2021 - May 2025",
     summary: "Engineering foundation across electrical and computer engineering."
@@ -76,16 +81,17 @@ export default function AboutPage() {
 
       <div className="grid gap-6 md:grid-cols-[0.85fr_1.15fr]">
         <div className="rounded-lg border border-line bg-panel p-5 shadow-soft">
-          <div className="about-avatar mb-5" aria-label="Portrait placeholder for Esther">
-            {/* TODO: Replace this placeholder with Esther's approved public headshot. */}
+          <div className="about-avatar mb-5" aria-label="Portrait of Esther">
             <div className="about-avatar__frame">
-              <div className="about-avatar__placeholder">
-                <span>EH</span>
-              </div>
+              <img
+                src="/images/esther-headshot.jpeg"
+                alt="Esther Huang"
+                className="about-avatar__image"
+              />
             </div>
             <div className="about-avatar__meta">
-              <span>Portrait slot</span>
-              <strong>Ready for headshot</strong>
+              <span>Portrait</span>
+              <strong>Esther Huang</strong>
             </div>
           </div>
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bluegray">
@@ -102,7 +108,7 @@ export default function AboutPage() {
             lose the thread?
           </p>
           <p className="mt-4">
-            That's the thread connecting what I build — agents that adapt when forms change,
+            That's the thread connecting what I build: agents that adapt when forms change,
             stories that stay coherent when players wander off-script, companions that help
             you start when starting is the hard part.
           </p>
@@ -116,7 +122,7 @@ export default function AboutPage() {
             <details key={item.label} className="about-disclosure rounded-lg border border-line bg-panel p-5 shadow-soft">
               <summary className="flex cursor-pointer list-none items-start justify-between gap-4">
                 <span className="flex items-start gap-3">
-                  <LogoSlot label={item.logoLabel} name={item.label} />
+                  <LogoSlot label={item.logoLabel} name={item.label} src={item.logoSrc} />
                   <span>
                     <span className="font-mono text-xs font-semibold uppercase tracking-[0.16em] text-bluegray">
                       {item.label}
@@ -156,7 +162,7 @@ export default function AboutPage() {
             <details key={item.school} className="about-disclosure rounded-lg border border-line bg-panel p-5 shadow-soft">
               <summary className="flex cursor-pointer list-none items-start justify-between gap-4">
                 <span className="flex items-start gap-3">
-                  <LogoSlot label={item.logoLabel} name={item.school} />
+                  <LogoSlot label={item.logoLabel} name={item.school} src={item.logoSrc} />
                   <span>
                     <span className="font-serif text-xl font-semibold leading-tight text-ink">
                       {item.school}
@@ -189,11 +195,14 @@ export default function AboutPage() {
   );
 }
 
-function LogoSlot({ label, name }: { label: string; name: string }) {
+function LogoSlot({ label, name, src }: { label: string; name: string; src?: string }) {
   return (
-    <span className="credential-logo-slot" aria-label={`${name} logo placeholder`}>
-      {/* TODO: Replace this placeholder with Esther's approved public logo asset. */}
-      <span>{label}</span>
+    <span className="credential-logo-slot" aria-label={`${name} logo`}>
+      {src ? (
+        <img src={src} alt={`${name} logo`} className="credential-logo-slot__image" />
+      ) : (
+        <span>{label}</span>
+      )}
     </span>
   );
 }

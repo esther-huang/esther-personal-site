@@ -13,7 +13,7 @@ tags:
 
 The interesting problem is not clicking buttons. It is adapting to messy workflows, grounding actions in real user context, learning from failure, and knowing when to ask for review.
 
-This project explores a browser agent that can help with high-friction application flows — without automating away the human judgment that actually matters.
+This project explores a browser agent that can help with high-friction application flows, without automating away the human judgment that actually matters.
 
 ## What I'm building
 

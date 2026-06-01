@@ -13,7 +13,7 @@ tags:
 
 Persona is not just a system prompt. Long-term character agents need voice, memory, values, relationship state, and behavioral boundaries.
 
-This lab explores how to reduce character drift over longer interactions. The core problem is not style imitation — it is state management: what the character remembers, what they value, how the relationship has changed, and what behavior stays stable over time.
+This lab explores how to reduce character drift over longer interactions. The core problem is not style imitation. It is state management: what the character remembers, what they value, how the relationship has changed, and what behavior stays stable over time.
 
 ## What I'm building
 

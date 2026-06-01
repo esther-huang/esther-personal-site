@@ -53,16 +53,12 @@ export function ProjectCard({
 
 function ProjectIllustrationSlot({ title }: { title: string }) {
   return (
-    <div className="project-illustration-slot mb-5" aria-label={`${title} illustration placeholder`}>
-      {/* TODO: Replace this placeholder with Esther's approved project illustration. */}
-      <div className="project-illustration-slot__grid" aria-hidden="true" />
-      <div className="project-illustration-slot__node project-illustration-slot__node--one" />
-      <div className="project-illustration-slot__node project-illustration-slot__node--two" />
-      <div className="project-illustration-slot__node project-illustration-slot__node--three" />
-      <div className="project-illustration-slot__copy">
-        <span>Illustration slot</span>
-        <strong>{title}</strong>
-      </div>
+    <div className="project-illustration-slot mb-5" aria-label={`${title} illustration`}>
+      <img
+        src="/images/projects/branching-storytelling-agent.png"
+        alt={`${title} system diagram`}
+        className="project-illustration-slot__image"
+      />
     </div>
   );
 }
