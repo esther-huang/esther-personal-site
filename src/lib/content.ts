@@ -17,6 +17,10 @@ export type ContentItem = {
   order?: number;
   featured?: boolean;
   draft?: boolean;
+  githubUrl?: string;
+  demoUrl?: string;
+  heroImage?: string;
+  heroImageAlt?: string;
   tags: string[];
   body: string;
   html: string;
@@ -65,6 +69,10 @@ export async function getContentItem(type: ContentType, slug: string): Promise<C
     order: typeof data.order === "number" ? data.order : undefined,
     featured: Boolean(data.featured),
     draft: Boolean(data.draft),
+    githubUrl: data.githubUrl ? String(data.githubUrl) : undefined,
+    demoUrl: data.demoUrl ? String(data.demoUrl) : undefined,
+    heroImage: data.heroImage ? String(data.heroImage) : undefined,
+    heroImageAlt: data.heroImageAlt ? String(data.heroImageAlt) : undefined,
     tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
     body: parsed.content,
     html: await markdownToHtml(parsed.content)

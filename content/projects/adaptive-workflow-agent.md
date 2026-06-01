@@ -4,7 +4,7 @@ description: "A human-in-the-loop browser agent for high-friction web workflows,
 status: "Exploration"
 pillar: "Agents for Action"
 featured: true
-order: 1
+order: 2
 tags:
   - workflow automation
   - browser agents

@@ -4,7 +4,11 @@ description: "A narrative runtime for long-form AI storytelling, using structure
 status: "Prototype notes"
 pillar: "Agents for Narrative"
 featured: true
-order: 2
+order: 1
+githubUrl: "#"
+demoUrl: "#"
+heroImage: "/images/projects/branching-storytelling-agent.png"
+heroImageAlt: "Branching Storytelling Agent system architecture diagram"
 tags:
   - narrative systems
   - story state
@@ -29,6 +33,13 @@ Longer context windows help, but they do not solve the structural problem. A sto
 Here is a concrete case: a player decides mid-scene to betray an ally they were supposed to protect. The model can generate a reaction. But should the ally remember this next scene? Does it change what the player is allowed to do later? Does the story's ending branch from here, or was this a throwaway choice? Those questions cannot be answered by the context window alone. They require explicit state: what persists, what expires, and what triggers a branch.
 
 We are exploring a scene graph structure where each node carries its own state requirements: what must be true for the scene to activate, what changes when the player passes through it, and what the system needs to carry forward. The goal is not to constrain the player. It is to make the story's memory reliable enough that freedom feels meaningful.
+
+## System diagram
+
+The current architecture separates script structuring from runtime game mastering. The first stage turns raw narrative material into hierarchical script representation and structured knowledge. The second stage uses player input, branching decisions, retrieval, context construction, game mechanics, response generation, and persistent state updates to keep the story coherent.
+
+<!-- TODO: Replace the placeholder GitHub and demo links in frontmatter once the public repo and demo URL are ready. -->
+<!-- TODO: Add a second detailed diagram under public/images/projects/ and reference it from this page when available. -->
 
 ## Open questions
 

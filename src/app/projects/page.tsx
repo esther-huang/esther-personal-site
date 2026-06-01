@@ -19,7 +19,11 @@ export default async function ProjectsPage() {
       />
       <div className="grid gap-5 md:grid-cols-2">
         {projects.map((project) => (
-          <ProjectCard key={project.slug} project={project} />
+          <ProjectCard
+            key={project.slug}
+            project={project}
+            showIllustrationSlot={project.slug === "branching-storytelling-agent"}
+          />
         ))}
       </div>
     </main>
