@@ -2,9 +2,9 @@
 node_modules/
 .tools/
 .ghconfig/
-.DS_Store
 out/
 .DS_Store
+**/.DS_Store
 .env*
 !.env.example
 npm-debug.log*
