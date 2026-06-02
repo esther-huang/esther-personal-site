@@ -25,6 +25,7 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: "Esther | Memory, knowledge, and action in AI systems",
     template: "%s | Esther"
