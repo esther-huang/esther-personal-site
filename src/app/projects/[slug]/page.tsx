@@ -63,7 +63,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <ProjectActionLink href={project.githubUrl} label="GitHub" />
             ) : null}
             {project.demoUrl ? (
-              <ProjectActionLink href={project.demoUrl} label="Play it" />
+              <ProjectActionLink href={project.demoUrl} label="Try demo" />
             ) : null}
           </div>
         ) : null}

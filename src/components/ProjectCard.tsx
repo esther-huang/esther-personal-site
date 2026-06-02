@@ -63,7 +63,7 @@ export function ProjectCard({
             rel="noreferrer"
             className="rounded-md border border-bluegray/30 bg-paper px-3 py-1.5 text-sm font-semibold text-ink transition duration-700 hover:border-bluegray/55 hover:bg-panelSoft"
           >
-            Play it
+            Try demo
           </a>
         ) : null}
       </div>

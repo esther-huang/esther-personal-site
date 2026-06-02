@@ -19,7 +19,7 @@ Keeping a story coherent while players keep changing the path. That is the probl
 
 Long-form story generation is a runtime problem: scenes, goals, player choices, constraints, and state transitions. The challenge is not generating the next paragraph. It is knowing what must stay true across scenes, what can change, and what to do when the player takes an unexpected path.
 
-## What I'm building
+## What we're building
 
 - Decomposing long scripts into structured story units.
 - Tracking player behavior and story state.
@@ -43,6 +43,10 @@ The current architecture separates script structuring from runtime game masterin
 This demo screen shows the player-facing flow: choosing a table, setting the scene, creating an investigator, and entering the case. It is the visible side of the runtime system, where structured narrative state has to become an interaction the player can actually move through.
 
 ![Branching Storytelling Agent demo screen](/images/projects/branching-storytelling-agent-demo1.png)
+
+The second screen shows the in-session interaction layer: player input, generated story response, and the game-master flow that has to stay grounded in the current narrative state.
+
+![Branching Storytelling Agent in-session demo screen](/images/projects/branching-storytelling-agent-demo2.png)
 
 ## Open questions
 
