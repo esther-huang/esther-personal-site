@@ -18,14 +18,11 @@ export default function ContactPage() {
 
       <div className="grid gap-5 md:grid-cols-3">
         <Link
-          href={siteConfig.social.github}
+          href={siteConfig.social.x}
           className="rounded-lg border border-line bg-panel p-5 shadow-soft transition duration-700 hover:border-bluegray/35 hover:bg-panelSoft"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bluegray">GitHub</p>
-          <p className="mt-3 text-lg font-semibold text-ink">Project repositories</p>
-          <p className="mt-2 text-sm leading-6 text-muted">
-            Code, experiments, and selected project work.
-          </p>
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bluegray">X</p>
+          <p className="mt-3 text-lg font-semibold text-ink">Short build notes</p>
         </Link>
         <Link
           href={siteConfig.social.linkedin}
@@ -33,19 +30,13 @@ export default function ContactPage() {
         >
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-sage">LinkedIn</p>
           <p className="mt-3 text-lg font-semibold text-ink">Professional updates</p>
-          <p className="mt-2 text-sm leading-6 text-muted">
-            Background, public work, and professional context.
-          </p>
         </Link>
         <Link
-          href={siteConfig.social.x}
+          href={siteConfig.social.github}
           className="rounded-lg border border-line bg-panel p-5 shadow-soft transition duration-700 hover:border-bluegray/35 hover:bg-panelSoft"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bluegray">X</p>
-          <p className="mt-3 text-lg font-semibold text-ink">Short build notes</p>
-          <p className="mt-2 text-sm leading-6 text-muted">
-            Concise notes on AI systems, product judgment, and building.
-          </p>
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bluegray">GitHub</p>
+          <p className="mt-3 text-lg font-semibold text-ink">Project repositories</p>
         </Link>
       </div>
     </main>
