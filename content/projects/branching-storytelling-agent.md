@@ -38,6 +38,12 @@ We are exploring a scene graph structure where each node carries its own state r
 
 The current architecture separates script structuring from runtime game mastering. The first stage turns raw narrative material into hierarchical script representation and structured knowledge. The second stage uses player input, branching decisions, retrieval, context construction, game mechanics, response generation, and persistent state updates to keep the story coherent.
 
+## Demo screen
+
+This demo screen shows the player-facing flow: choosing a table, setting the scene, creating an investigator, and entering the case. It is the visible side of the runtime system, where structured narrative state has to become an interaction the player can actually move through.
+
+![Branching Storytelling Agent demo screen](/images/projects/branching-storytelling-agent-demo1.png)
+
 <!-- TODO: Replace the placeholder GitHub and demo links in frontmatter once the public repo and demo URL are ready. -->
 <!-- TODO: Add a second detailed diagram under public/images/projects/ and reference it from this page when available. -->
 

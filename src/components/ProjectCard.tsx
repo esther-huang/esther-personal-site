@@ -53,11 +53,16 @@ export function ProjectCard({
 
 function ProjectIllustrationSlot({ title }: { title: string }) {
   return (
-    <div className="project-illustration-slot mb-5" aria-label={`${title} illustration`}>
+    <div className="project-illustration-slot mb-5" aria-label={`${title} illustration preview`}>
       <img
         src="/images/projects/branching-storytelling-agent.png"
         alt={`${title} system diagram`}
-        className="project-illustration-slot__image"
+        className="project-illustration-slot__image project-illustration-slot__image--diagram"
+      />
+      <img
+        src="/images/projects/branching-storytelling-agent-demo1.png"
+        alt={`${title} demo screen`}
+        className="project-illustration-slot__image project-illustration-slot__image--demo"
       />
     </div>
   );

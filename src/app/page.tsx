@@ -7,7 +7,7 @@ import { getContentItems } from "@/lib/content";
 export default async function HomePage() {
   const projects = await getContentItems("projects");
   const writing = await getContentItems("writing");
-  const featuredProjects = projects.filter((project) => project.featured).slice(0, 3);
+  const featuredProjects = projects.filter((project) => project.slug === "branching-storytelling-agent");
   const recentWriting = writing.slice(0, 2);
 
   return (
@@ -62,7 +62,7 @@ export default async function HomePage() {
           title="Different projects, same underlying problem."
           description="Memory, context, and reliable action. In storytelling, in workflows, in long-term agent behavior. These are the areas I keep returning to."
         />
-        <div className="grid gap-5 md:grid-cols-3">
+        <div className="max-w-3xl">
           {featuredProjects.map((project) => (
             <ProjectCard
               key={project.slug}

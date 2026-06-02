@@ -917,18 +917,39 @@ main {
 
 .project-illustration-slot {
   position: relative;
-  aspect-ratio: 1519 / 888;
+  min-height: 11.25rem;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border: 1px solid rgba(246, 241, 232, 0.13);
   border-radius: 0.65rem;
-  background: #f4f4f1;
+  background:
+    radial-gradient(circle at 30% 24%, rgba(241, 212, 109, 0.08), transparent 34%),
+    radial-gradient(circle at 78% 72%, rgba(185, 138, 160, 0.1), transparent 36%),
+    #11100e;
 }
 
 .project-illustration-slot__image {
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  position: absolute;
+  height: 74%;
+  width: 72%;
+  border: 1px solid rgba(17, 16, 14, 0.18);
+  border-radius: 0.45rem;
+  background: #f4f4f1;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+  object-fit: cover;
+}
+
+.project-illustration-slot__image--diagram {
+  left: -7%;
+  top: 20%;
+  z-index: 1;
+}
+
+.project-illustration-slot__image--demo {
+  right: -9%;
+  top: 8%;
+  z-index: 2;
 }
 
 @keyframes glyph-breathe {
