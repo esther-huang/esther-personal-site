@@ -5,8 +5,8 @@ status: "Prototype notes"
 pillar: "Agents for Narrative"
 featured: true
 order: 1
-githubUrl: "#"
-demoUrl: "#"
+githubUrl: "https://github.com/esther-huang/Script-Driven-Narrative-Agent-System"
+demoUrl: "https://storykeeper.streamlit.app"
 heroImage: "/images/projects/branching-storytelling-agent.png"
 heroImageAlt: "Branching Storytelling Agent system architecture diagram"
 tags:
@@ -43,9 +43,6 @@ The current architecture separates script structuring from runtime game masterin
 This demo screen shows the player-facing flow: choosing a table, setting the scene, creating an investigator, and entering the case. It is the visible side of the runtime system, where structured narrative state has to become an interaction the player can actually move through.
 
 ![Branching Storytelling Agent demo screen](/images/projects/branching-storytelling-agent-demo1.png)
-
-<!-- TODO: Replace the placeholder GitHub and demo links in frontmatter once the public repo and demo URL are ready. -->
-<!-- TODO: Add a second detailed diagram under public/images/projects/ and reference it from this page when available. -->
 
 ## Open questions
 

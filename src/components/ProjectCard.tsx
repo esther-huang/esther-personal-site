@@ -13,11 +13,16 @@ export function ProjectCard({
   showDescription = true,
   showIllustrationSlot = false
 }: ProjectCardProps) {
+  const projectHref = `/projects/${project.slug}`;
+  const hasDemoLink = project.demoUrl && project.demoUrl !== "#";
+
   return (
-    <Link
-      href={`/projects/${project.slug}`}
-      className="group flex h-full flex-col justify-between rounded-lg border border-line bg-panel p-5 shadow-soft transition duration-700 hover:-translate-y-0.5 hover:border-bluegray/35 hover:bg-panelSoft"
-    >
+    <article className="group relative flex h-full flex-col justify-between rounded-lg border border-line bg-panel p-5 shadow-soft transition duration-700 hover:-translate-y-0.5 hover:border-bluegray/35 hover:bg-panelSoft">
+      <Link
+        href={projectHref}
+        aria-label={`Read project note for ${project.title}`}
+        className="absolute inset-0 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-rust/45"
+      />
       {showIllustrationSlot ? <ProjectIllustrationSlot title={project.title} /> : null}
       <div className="flex gap-4">
         <div className="shrink-0">
@@ -44,10 +49,25 @@ export function ProjectCard({
           ) : null}
         </div>
       </div>
-      <span className={showDescription ? "mt-6 text-sm font-semibold text-rust transition group-hover:text-ink" : "mt-5 text-sm font-semibold text-rust transition group-hover:text-ink"}>
-        Read project note
-      </span>
-    </Link>
+      <div className={showDescription ? "relative z-10 mt-6 flex flex-wrap items-center gap-3" : "relative z-10 mt-5 flex flex-wrap items-center gap-3"}>
+        <Link
+          href={projectHref}
+          className="text-sm font-semibold text-rust transition hover:text-ink"
+        >
+          Read project note
+        </Link>
+        {hasDemoLink ? (
+          <a
+            href={project.demoUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-md border border-bluegray/30 bg-paper px-3 py-1.5 text-sm font-semibold text-ink transition duration-700 hover:border-bluegray/55 hover:bg-panelSoft"
+          >
+            Play it
+          </a>
+        ) : null}
+      </div>
+    </article>
   );
 }
 
